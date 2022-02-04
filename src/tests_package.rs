@@ -31,7 +31,7 @@ pub static TEST_DEPENDENCIES: Lazy<String> = Lazy::new(|| {
 
 static CARGO_TOML_CONTENTS: Lazy<String> = Lazy::new(|| {
     format!(
-        r#"[package]
+        r#"cargo-features = ["edition2021"]
 name = "tests"
 version = "0.1.0"
 edition = "2018"
